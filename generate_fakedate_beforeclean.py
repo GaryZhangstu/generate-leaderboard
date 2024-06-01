@@ -68,7 +68,7 @@ def write_votes_to_file(file_path, votes):
 
 # 主函数
 if __name__ == "__main__":
-    file_path = "Logs/server0/server_log_20230401-1530-conv.json"  # 指定输出文件路径
+    file_path = "Logs/server0/server_log_20230402-1530-conv.json"  # 指定输出文件路径
     num_votes = 1000  # 指定要生成的投票数据数量
 
     # 生成投票数据

@@ -119,6 +119,7 @@ def read_file(filename):
             
             for l in open(filename):
                 row = json.loads(l)
+
                 if row["type"] in VOTES:
                     data.append(row)
             break
