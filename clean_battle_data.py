@@ -79,7 +79,7 @@ for i in range(len(ERROR_WORDS)):
 
 def remove_html(raw):
     if isinstance(raw, str) and raw.startswith("<h3>"):
-        return raw[raw.find(": ") + 2 : -len("</h3>\n")]
+        return raw[raw.find(": ") + 2: -len("</h3>\n")]
     return raw
 
 
@@ -116,10 +116,11 @@ def read_file(filename):
     data = []
     for retry in range(5):
         try:
-            
-            for l in open(filename):
-                row = json.loads(l)
+            with open(filename, 'r') as file:
+                content = file.read()
+                json_array = json.loads(content)
 
+            for row in json_array:
                 if row["type"] in VOTES:
                     data.append(row)
             break
@@ -138,10 +139,10 @@ def read_file_parallel(log_files, num_threads=16):
 
 
 def process_data(
-    data,
-    exclude_model_names,
-    sanitize_ip,
-    ban_ip_list,
+        data,
+        exclude_model_names,
+        sanitize_ip,
+        ban_ip_list,
 ):
     encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
     convert_type = {
@@ -189,7 +190,7 @@ def process_data(
             models_hidden = models_public
 
         if (models_public[0] == "" and models_public[1] != "") or (
-            models_public[1] == "" and models_public[0] != ""
+                models_public[1] == "" and models_public[0] != ""
         ):
             count_dict["invalid"] += 1
             continue
@@ -201,8 +202,8 @@ def process_data(
             flag_anony = False
             models = models_public
             if (
-                models_hidden[0] not in models_public[0]
-                or models_hidden[1] not in models_public[1]
+                    models_hidden[0] not in models_public[0]
+                    or models_hidden[1] not in models_public[1]
             ):
                 count_dict["invalid"] += 1
                 continue
@@ -218,7 +219,7 @@ def process_data(
         messages = ""
         for i in range(2):
             state = row["states"][i]
-            for _, (role, msg) in enumerate(state["messages"][state["offset"] :]):
+            for _, (role, msg) in enumerate(state["messages"][state["offset"]:]):
                 if msg:
                     messages += msg.lower()
                 else:
@@ -264,10 +265,10 @@ def process_data(
 
         question_id = row["states"][0]["conv_id"]
         conversation_a = to_openai_format(
-            row["states"][0]["messages"][row["states"][0]["offset"] :]
+            row["states"][0]["messages"][row["states"][0]["offset"]:]
         )
         conversation_b = to_openai_format(
-            row["states"][1]["messages"][row["states"][1]["offset"] :]
+            row["states"][1]["messages"][row["states"][1]["offset"]:]
         )
 
         ip = row["ip"]
@@ -315,12 +316,12 @@ def process_data(
 
 
 def clean_battle_data(
-    log_files,
-    exclude_model_names,
-    ban_ip_list=None,
-    sanitize_ip=False,
-    anony_only=False,
-    num_threads=16,
+        log_files,
+        exclude_model_names,
+        ban_ip_list=None,
+        sanitize_ip=False,
+        anony_only=False,
+        num_threads=16,
 ):
     data = read_file_parallel(log_files, num_threads=16)
 
@@ -332,7 +333,7 @@ def clean_battle_data(
         # split data into chunks
         chunk_size = len(data) // min(100, len(data))
         data_chunks = [
-            data[i : i + chunk_size] for i in range(0, len(data), chunk_size)
+            data[i: i + chunk_size] for i in range(0, len(data), chunk_size)
         ]
 
         args_list = [
@@ -360,7 +361,7 @@ def clean_battle_data(
 
     print(f"#votes: {len(data)}")
     print(count_dict)
-    print(f"#battles: {len(battles)}, #anony: {count_dict['anony']}")
+    print(f"#battles: {len(battles)}")
     print(f"last-updated: {last_updated_datetime}")
     print(f"leaked_identity: {count_leak}")
 
