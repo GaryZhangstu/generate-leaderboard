@@ -494,9 +494,7 @@ def report_elo_analysis_results(
             "variance": bootstrap_df.var(),
             "rating_q975": bootstrap_df.quantile(0.975),
             "rating_q025": bootstrap_df.quantile(0.025),
-            "num_battles": battles["model_a"]
-            .value_counts()
-            .add(battles["model_b"].value_counts(), fill_value=0),
+            "num_battles": battles["model_a"].value_counts().add(battles["model_b"].value_counts(), fill_value=0),
             "final_ranking": pd.Series(ranking),
         }
     )
@@ -520,7 +518,11 @@ def report_elo_analysis_results(
         bootstrap_df, elo_rating_final, limit_show_number, scale=scale
     )
 
+    print(battles["tstamp"].isna().sum())
+
     last_updated_tstamp = battles["tstamp"].max()
+    if pd.isna(last_updated_tstamp):
+        last_updated_tstamp = datetime.datetime.now().timestamp()
     last_updated_datetime = datetime.datetime.fromtimestamp(
         last_updated_tstamp, tz=timezone("US/Pacific")
     ).strftime("%Y-%m-%d %H:%M:%S %Z")
@@ -605,18 +607,21 @@ if __name__ == "__main__":
         )
 
     for cat in args.category:
-        print(f"# Results for {cat} conversations")
-        print("# Online Elo")
+
         pretty_print_elo_rating(results[cat]["elo_rating_online"])
-        print("# Median")
+
         pretty_print_elo_rating(results[cat]["elo_rating_final"])
-        print(f"last update : {results[cat]['last_updated_datetime']}")
+
 
         last_updated_tstamp = results[cat]["last_updated_tstamp"]
+        if pd.isna(last_updated_tstamp):
+            last_updated_tstamp = datetime.datetime.now().timestamp()
         cutoff_date = datetime.datetime.fromtimestamp(
             last_updated_tstamp, tz=timezone("US/Pacific")
         ).strftime("%Y%m%d")
-        print(f"last update : {cutoff_date}")
+
 
     with open(f"elo_results_{cutoff_date}.pkl", "wb") as fout:
         pickle.dump(results, fout)
+
+    print(f"elo_results_{cutoff_date}.pkl")
