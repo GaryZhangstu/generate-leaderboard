@@ -1,12 +1,12 @@
-Model,Link,Arena Elo rating,MMLU,MT-bench (win rate %),MT-bench (score),Organization,License,Knowledge cutoff date
-AssistantModel9,http://example.com,1500,0.8,75%,0.75,Org A,Open,2023-01-01
-AssistantModel1,http://example.com,-,-,-,-,Org B,Closed,2023-01-01
-AssistantModel10,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel2,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel3,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel4,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel5,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel6,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel7,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel8,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
-AssistantModel9,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01
+Model,Link,Arena Elo rating,MMLU,MT-bench (win rate %),MT-bench (score),Organization,License,Knowledge cutoff date,key
+AssistantModel9,http://example.com,1500,0.8,75%,0.75,Org A,Open,2023-01-01,AssistantModel9
+AssistantModel1,http://example.com,-,-,-,-,Org B,Closed,2023-01-01,AssistantModel1
+AssistantModel10,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel10
+AssistantModel2,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel2
+AssistantModel3,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel3
+AssistantModel4,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel4
+AssistantModel5,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel5
+AssistantModel6,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel6
+AssistantModel7,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel7
+AssistantModel8,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel8
+AssistantModel9,http://example.com,1600,0.85,80%,0.80,Org C,Open,2023-01-01,AssistantModel10

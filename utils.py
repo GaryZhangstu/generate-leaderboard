@@ -13,11 +13,11 @@ import sys
 import time
 from typing import AsyncGenerator, Generator
 import warnings
+from datetime import datetime
 
 import requests
 
 LOGDIR = None
-
 
 handler = None
 visited_loggers = set()
@@ -142,15 +142,11 @@ def get_gpu_memory(max_gpus=None):
         with torch.cuda.device(gpu_id):
             device = torch.cuda.current_device()
             gpu_properties = torch.cuda.get_device_properties(device)
-            total_memory = gpu_properties.total_memory / (1024**3)
-            allocated_memory = torch.cuda.memory_allocated() / (1024**3)
+            total_memory = gpu_properties.total_memory / (1024 ** 3)
+            allocated_memory = torch.cuda.memory_allocated() / (1024 ** 3)
             available_memory = total_memory - allocated_memory
             gpu_memory.append(available_memory)
     return gpu_memory
-
-
-
-
 
 
 def clean_flant5_ckpt(ckpt_path):
@@ -194,7 +190,6 @@ function() {
     }
 """
 
-
 get_window_url_params_with_tos_js = """
 function() {
     const params = new URLSearchParams(window.location.search);
@@ -232,9 +227,6 @@ def iter_over_async(
         if done:
             break
         yield obj
-
-
-
 
 
 def parse_gradio_auth_creds(filename: str):
@@ -334,12 +326,6 @@ def load_image(image_file):
     return image
 
 
-
-
-
-
-
-
 def pil_image_to_byte_array(pil_image, format="JPEG"):
     img_byte_arr = BytesIO()
     pil_image.save(img_byte_arr, format=format)
@@ -397,3 +383,26 @@ def image_moderation_filter(image):
     nsfw_flagged = image_moderation_provider(image, "nsfw")
     csam_flagged = image_moderation_provider(image, "csam")
     return nsfw_flagged, csam_flagged
+
+
+def get_max_date_json_files(directory: str, prefix: str) -> str:
+    max_date = datetime.min
+    max_filename = None
+
+    for filename in os.listdir(directory):
+        if filename.startswith(prefix) and filename.endswith(".json"):
+            try:
+                date_str = filename[len(prefix):-5]
+                parsed_date = datetime.strptime(date_str, "%Y-%m-%d_%H-%M-%S")
+                if parsed_date > max_date:
+                    max_date = parsed_date
+                    max_filename = filename
+            except ValueError:
+                print(f"Invalid date format: {filename}")
+
+    return max_filename if max_filename else None
+
+
+def read_json_file(file_path: str):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return json.load(file)

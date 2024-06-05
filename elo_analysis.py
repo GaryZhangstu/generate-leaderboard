@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 from tqdm import tqdm
-from transformers import AutoTokenizer
+
 
 from model_registry import get_model_info
 from basic_stats import get_log_files
@@ -547,7 +547,51 @@ def pretty_print_elo_rating(rating):
     model_order = list(rating.keys())
     model_order.sort(key=lambda k: -rating[k])
     for i, model in enumerate(model_order):
-        print(f"{i+1:2d}, {model:25s}, {rating[model]:.0f}")
+        print(f"{i + 1:2d}, {model:25s}, {rating[model]:.0f}")
+
+
+def return_full_category_table():
+    _log_files = get_log_files(None)
+    _battles = clean_battle_data(log_files, [])
+    _filter_func_map = {
+        "full": lambda x: True,
+        "long": filter_long_conv,
+        "chinese": lambda x: x["language"] == "Chinese",
+        "english": lambda x: x["language"] == "English",
+    }
+    assert all(
+        [cat in _filter_func_map for cat in ['english', 'chinese', 'full']]
+    ), f"Invalid category: {args.category}"
+    results = {}
+    for cat in args.category:
+        filter_func = filter_func_map[cat]
+        results[cat] = report_elo_analysis_results(
+            battles,
+            rating_system=args.rating_system,
+            num_bootstrap=args.num_bootstrap,
+            exclude_models=args.exclude_models,
+            langs=args.langs,
+            exclude_tie=args.exclude_tie,
+            exclude_unknown_lang=args.exclude_unknown_lang,
+            daily_vote_per_user=args.daily_vote_per_user,
+            run_outlier_detect=args.run_outlier_detect,
+            scale=args.scale,
+            filter_func=filter_func,
+        )
+
+    for cat in args.category:
+
+        pretty_print_elo_rating(results[cat]["elo_rating_online"])
+
+        pretty_print_elo_rating(results[cat]["elo_rating_final"])
+
+        _last_updated_tstamp = results[cat]["last_updated_tstamp"]
+        if pd.isna(_last_updated_tstamp):
+            _last_updated_tstamp = datetime.datetime.now().timestamp()
+        _cutoff_date = datetime.datetime.fromtimestamp(
+            last_updated_tstamp, tz=timezone("US/Pacific")
+        ).strftime("%Y%m%d")
+    return results
 
 
 if __name__ == "__main__":
@@ -577,7 +621,7 @@ if __name__ == "__main__":
     else:
         # Read data from all log files
         log_files = get_log_files(args.max_num_files)
-        battles = clean_battle_data(log_files,[])
+        battles = clean_battle_data(log_files, [])
 
     filter_func_map = {
         "full": lambda x: True,
@@ -612,14 +656,12 @@ if __name__ == "__main__":
 
         pretty_print_elo_rating(results[cat]["elo_rating_final"])
 
-
         last_updated_tstamp = results[cat]["last_updated_tstamp"]
         if pd.isna(last_updated_tstamp):
             last_updated_tstamp = datetime.datetime.now().timestamp()
         cutoff_date = datetime.datetime.fromtimestamp(
             last_updated_tstamp, tz=timezone("US/Pacific")
         ).strftime("%Y%m%d")
-
 
     with open(f"elo_results_{cutoff_date}.pkl", "wb") as fout:
         pickle.dump(results, fout)

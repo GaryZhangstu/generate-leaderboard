@@ -1,0 +1,1362 @@
+[
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_a",
+    "judge": "arena_user_12.221.144.30",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_217.189.194.199",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_64.66.251.9",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_89.230.166.223",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_115.16.23.217",
+    "turn": 1,
+    "anony": false,
+    "language": "hu",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_71.50.41.47",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "model_b",
+    "judge": "arena_user_64.225.58.167",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_177.72.61.72",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_118.88.0.39",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_39.37.127.195",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_208.113.71.53",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_8.20.174.113",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_137.15.60.197",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_71.219.187.26",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_5.241.89.208",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_159.246.113.37",
+    "turn": 1,
+    "anony": false,
+    "language": "hu",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_195.242.162.95",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_175.219.40.113",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_219.128.127.221",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_77.25.43.246",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_17.74.22.128",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_3.23.185.72",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_98.108.39.166",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_222.210.229.65",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_96.234.160.142",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_13.222.121.146",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_118.6.1.234",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_42.232.147.148",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_145.175.253.32",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_194.220.34.241",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_10.69.191.125",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_20.149.191.118",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "model_b",
+    "judge": "arena_user_115.73.43.99",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_6.214.125.2",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_221.215.156.233",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_125.82.227.142",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_153.118.14.87",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_214.37.54.181",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_198.126.167.25",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_211.212.166.118",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_84.84.106.23",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_85.207.73.159",
+    "turn": 1,
+    "anony": false,
+    "language": "hu",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_71.73.225.198",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_220.192.184.51",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_45.105.149.239",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_10.146.158.64",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_223.46.174.163",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "tie",
+    "judge": "arena_user_88.39.33.125",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_119.151.128.63",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_87.230.213.104",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_96.216.153.20",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "model_b",
+    "judge": "arena_user_33.202.67.23",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_164.5.174.115",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_40.140.100.90",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_12.17.67.187",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_175.170.187.227",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_102.158.24.37",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_24.148.16.113",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_162.161.104.195",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_8.65.111.174",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_90.178.9.141",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_116.170.181.118",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_143.162.40.153",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_166.14.55.19",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_85.91.224.116",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_194.100.248.39",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_150.112.190.234",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_144.199.222.103",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_47.132.251.101",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_105.222.144.251",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_99.130.161.232",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "tie",
+    "judge": "arena_user_148.117.8.230",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_67.219.87.137",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717160616
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_131.120.150.122",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_39.133.17.33",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_190.22.248.11",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_109.28.18.177",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_154.165.157.159",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_87.192.232.173",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_149.78.61.71",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "tie",
+    "judge": "arena_user_202.185.14.179",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_54.131.215.113",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "model_a",
+    "judge": "arena_user_109.254.111.75",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_118.26.69.41",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_170.98.55.214",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_183.159.131.109",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_58.109.103.75",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_66.151.224.176",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_162.184.11.79",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_112.216.244.120",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_192.165.155.168",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_149.84.106.153",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "model_a",
+    "judge": "arena_user_150.115.21.60",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_128.145.230.239",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "model_a",
+    "judge": "arena_user_131.181.101.137",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_115.247.84.253",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_19.183.144.86",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_114.69.24.14",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_204.144.123.40",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_a",
+    "judge": "arena_user_120.81.11.86",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_163.227.45.126",
+    "turn": 1,
+    "anony": false,
+    "language": "hu",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_101.184.130.24",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_121.13.131.104",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_184.255.6.253",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_176.121.96.50",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_9.72.216.151",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_185.24.187.19",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "tie",
+    "judge": "arena_user_222.182.44.11",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_113.245.210.75",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_180.79.161.42",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_213.25.2.238",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "model_b",
+    "judge": "arena_user_60.25.241.106",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_171.110.0.156",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_150.121.51.10",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_a",
+    "judge": "arena_user_56.18.255.73",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_199.26.176.220",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_b",
+    "winner": "model_b",
+    "judge": "arena_user_68.254.107.90",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "tie",
+    "judge": "arena_user_73.168.0.142",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_219.91.35.103",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_b",
+    "judge": "arena_user_15.78.16.73",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_147.110.199.131",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_198.16.28.253",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "model_a",
+    "judge": "arena_user_209.68.63.46",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "model_b",
+    "judge": "arena_user_155.111.142.29",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_d",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_130.42.192.147",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_72.50.179.92",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "tie",
+    "judge": "arena_user_108.98.208.27",
+    "turn": 1,
+    "anony": false,
+    "language": "fi",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_198.156.14.208",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_a",
+    "winner": "model_a",
+    "judge": "arena_user_3.77.180.159",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_a",
+    "winner": "tie",
+    "judge": "arena_user_110.82.38.17",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_c",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_51.78.81.60",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_b",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_109.72.115.98",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_44.22.244.19",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_39.75.109.110",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_b",
+    "model_b": "model_d",
+    "winner": "model_b",
+    "judge": "arena_user_89.135.152.64",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  },
+  {
+    "model_a": "model_a",
+    "model_b": "model_c",
+    "winner": "tie (bothbad)",
+    "judge": "arena_user_84.193.178.130",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1717209901
+  }
+]

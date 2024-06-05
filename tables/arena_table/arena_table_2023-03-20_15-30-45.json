@@ -1,0 +1,323 @@
+[
+    {
+        "dataSource": "bt",
+        "category": "full",
+        "lastUpdated": "2024-05-27 21:55:57 PDT",
+        "arena_table": [
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel9",
+                "Elo": 1021,
+                "95% CI": "+33/-34",
+                "Votes": 194,
+                "Organization": "Org A",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel3",
+                "Elo": 1013,
+                "95% CI": "+30/-30",
+                "Votes": 209,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel10",
+                "Elo": 1009,
+                "95% CI": "+42/-39",
+                "Votes": 172,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel7",
+                "Elo": 1009,
+                "95% CI": "+41/-37",
+                "Votes": 189,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel8",
+                "Elo": 1007,
+                "95% CI": "+35/-27",
+                "Votes": 216,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel5",
+                "Elo": 1004,
+                "95% CI": "+35/-37",
+                "Votes": 195,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel1",
+                "Elo": 997,
+                "95% CI": "+33/-34",
+                "Votes": 183,
+                "Organization": "Org B",
+                "License": "Closed",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel6",
+                "Elo": 993,
+                "95% CI": "+29/-43",
+                "Votes": 209,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel2",
+                "Elo": 975,
+                "95% CI": "+27/-37",
+                "Votes": 222,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel4",
+                "Elo": 971,
+                "95% CI": "+29/-32",
+                "Votes": 211,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            }
+        ]
+    },
+    {
+        "dataSource": "bt",
+        "category": "chinese",
+        "lastUpdated": "2024-05-27 09:25:49 PDT",
+        "arena_table": [
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel8",
+                "Elo": 1053,
+                "95% CI": "+74/-53",
+                "Votes": 45,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel7",
+                "Elo": 1044,
+                "95% CI": "+95/-83",
+                "Votes": 41,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel3",
+                "Elo": 1014,
+                "95% CI": "+70/-74",
+                "Votes": 40,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel4",
+                "Elo": 1008,
+                "95% CI": "+75/-71",
+                "Votes": 48,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel1",
+                "Elo": 988,
+                "95% CI": "+79/-64",
+                "Votes": 35,
+                "Organization": "Org B",
+                "License": "Closed",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel10",
+                "Elo": 984,
+                "95% CI": "+64/-77",
+                "Votes": 42,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel2",
+                "Elo": 983,
+                "95% CI": "+99/-90",
+                "Votes": 42,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel5",
+                "Elo": 983,
+                "95% CI": "+79/-60",
+                "Votes": 50,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel9",
+                "Elo": 982,
+                "95% CI": "+80/-90",
+                "Votes": 45,
+                "Organization": "Org A",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel6",
+                "Elo": 961,
+                "95% CI": "+73/-127",
+                "Votes": 36,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            }
+        ]
+    },
+    {
+        "dataSource": "bt",
+        "category": "english",
+        "lastUpdated": "2024-05-27 21:55:57 PDT",
+        "arena_table": [
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel9",
+                "Elo": 1036,
+                "95% CI": "+42/-36",
+                "Votes": 149,
+                "Organization": "Org A",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel10",
+                "Elo": 1019,
+                "95% CI": "+48/-38",
+                "Votes": 130,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel3",
+                "Elo": 1012,
+                "95% CI": "+40/-39",
+                "Votes": 169,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel5",
+                "Elo": 1011,
+                "95% CI": "+44/-24",
+                "Votes": 145,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel1",
+                "Elo": 1000,
+                "95% CI": "+51/-40",
+                "Votes": 148,
+                "Organization": "Org B",
+                "License": "Closed",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel6",
+                "Elo": 999,
+                "95% CI": "+42/-42",
+                "Votes": 173,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel7",
+                "Elo": 997,
+                "95% CI": "+40/-39",
+                "Votes": 148,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel8",
+                "Elo": 994,
+                "95% CI": "+33/-41",
+                "Votes": 171,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "1",
+                "Model": "AssistantModel2",
+                "Elo": 974,
+                "95% CI": "+35/-42",
+                "Votes": 180,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            },
+            {
+                "Rank* (UB)": "2",
+                "Model": "AssistantModel4",
+                "Elo": 958,
+                "95% CI": "+35/-43",
+                "Votes": 163,
+                "Organization": "Org C",
+                "License": "Open",
+                "Knowledge Cutoff Date": "2023-01-01"
+            }
+        ]
+    }
+]
