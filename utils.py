@@ -17,6 +17,8 @@ from datetime import datetime
 
 import requests
 
+from config.oss_config import bucket
+
 LOGDIR = None
 
 handler = None
@@ -406,3 +408,21 @@ def get_max_date_json_files(directory: str, prefix: str) -> str:
 def read_json_file(file_path: str):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
+
+
+def download_new_file():
+    local_folder = './Logs/server0/'
+    oss_folder = 'Logs/'
+    for obj in bucket.list_objects_v2(prefix=oss_folder, delimiter='/'):
+        if obj.is_prefix():
+            continue  # 跳过目录
+        oss_file_key = obj.key
+        local_file_path = os.path.join(local_folder, os.path.basename(oss_file_key))
+
+    # 检查本地文件是否存在
+        if not os.path.exists(local_file_path):
+            print(f"本地缺少文件 {local_file_path}，开始下载...")
+            bucket.get_object_to_file(oss_file_key, local_file_path)
+            print(f"文件 {local_file_path} 下载完成。")
+        else:
+            print(f"文件 {local_file_path} 已存在，跳过下载。")

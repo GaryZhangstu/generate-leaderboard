@@ -3,11 +3,13 @@ from typing import Union
 from fastapi import FastAPI, BackgroundTasks
 
 import elo_analysis
+import generate_arena_tabl
 import run_script
 import generator
 import utils
 import os
 import json
+import utils
 
 app = FastAPI()
 
@@ -21,8 +23,8 @@ def read_root():
 
 @app.post("/api/v1/compute_elo")
 def compute_elo(background_tasks: BackgroundTasks):
-    background_tasks.add_task(elo_analysis.return_full_category_table())
-
+    utils.download_new_file()
+    background_tasks.add_task(generate_arena_tabl.generate_arena_leaderboard_json)
     return {"ok"}
 
 
@@ -36,9 +38,11 @@ def leaderboard():
     else:
         return
     content = utils.read_json_file(full_path)
+    with open('1.txt', 'w') as f:
+        f.write(content)
     print(f"Content of the latest file ({max_date_file}):")
-
-    return json.dumps(content)
+    print(json.dumps(content, indent=4, ensure_ascii=False))
+    return {"ok"}
 
 
 @app.get("/api/v1/elo_results")

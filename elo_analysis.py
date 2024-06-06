@@ -551,8 +551,8 @@ def pretty_print_elo_rating(rating):
 
 
 def return_full_category_table():
-    _log_files = get_log_files(None)
-    _battles = clean_battle_data(log_files, [])
+    _log_files = get_log_files()
+    _battles = clean_battle_data(_log_files, [])
     _filter_func_map = {
         "full": lambda x: True,
         "long": filter_long_conv,
@@ -561,12 +561,12 @@ def return_full_category_table():
     }
     assert all(
         [cat in _filter_func_map for cat in ['english', 'chinese', 'full']]
-    ), f"Invalid category: {args.category}"
+    ), f"Invalid category: ['english', 'chinese', 'full']"
     results = {}
-    for cat in args.category:
-        filter_func = filter_func_map[cat]
+    for cat in ['english', 'chinese', 'full']:
+        filter_func = _filter_func_map[cat]
         results[cat] = report_elo_analysis_results(
-            battles,
+            _battles,
             rating_system="bt",
             num_bootstrap=100,
             exclude_models=[],
@@ -589,8 +589,10 @@ def return_full_category_table():
         if pd.isna(_last_updated_tstamp):
             _last_updated_tstamp = datetime.datetime.now().timestamp()
         _cutoff_date = datetime.datetime.fromtimestamp(
-            last_updated_tstamp, tz=timezone("US/Pacific")
+            _last_updated_tstamp, tz=timezone("US/Pacific")
         ).strftime("%Y%m%d")
+
+
     return results
 
 

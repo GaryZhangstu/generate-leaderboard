@@ -195,6 +195,7 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
         with open(elo_results_file, "rb") as fin:
             elo_results = pickle.load(fin)
     else:
+
         elo_results = return_full_category_table()
 
     if leaderboard_table_file is None:
