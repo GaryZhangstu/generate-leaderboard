@@ -567,19 +567,19 @@ def return_full_category_table():
         filter_func = filter_func_map[cat]
         results[cat] = report_elo_analysis_results(
             battles,
-            rating_system=args.rating_system,
-            num_bootstrap=args.num_bootstrap,
-            exclude_models=args.exclude_models,
-            langs=args.langs,
-            exclude_tie=args.exclude_tie,
-            exclude_unknown_lang=args.exclude_unknown_lang,
-            daily_vote_per_user=args.daily_vote_per_user,
-            run_outlier_detect=args.run_outlier_detect,
-            scale=args.scale,
+            rating_system="bt",
+            num_bootstrap=100,
+            exclude_models=[],
+            langs=[],
+            exclude_tie=False,
+            exclude_unknown_lang=False,
+            daily_vote_per_user=None,
+            run_outlier_detect=False,
+            scale=1,
             filter_func=filter_func,
         )
 
-    for cat in args.category:
+    for cat in ['english', 'chinese', 'full']:
 
         pretty_print_elo_rating(results[cat]["elo_rating_online"])
 

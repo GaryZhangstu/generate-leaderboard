@@ -2,6 +2,7 @@ from typing import Union
 
 from fastapi import FastAPI, BackgroundTasks
 
+import elo_analysis
 import run_script
 import generator
 import utils
@@ -20,17 +21,16 @@ def read_root():
 
 @app.post("/api/v1/compute_elo")
 def compute_elo(background_tasks: BackgroundTasks):
-    background_tasks.add_task(generator.generate_arena_leaderboard_json())
+    background_tasks.add_task(elo_analysis.return_full_category_table())
 
     return {"ok"}
 
 
 @app.get("/api/v1/leaderboard")
 def leaderboard():
-
     folder_path = "./tables/arena_table"
     abs_path = os.path.abspath(folder_path)
-    max_date_file = utils.get_max_date_json_files(abs_path,"arena_table_")
+    max_date_file = utils.get_max_date_json_files(abs_path, "arena_table_")
     if max_date_file:
         full_path = os.path.join(abs_path, max_date_file)
     else:
@@ -39,3 +39,8 @@ def leaderboard():
     print(f"Content of the latest file ({max_date_file}):")
 
     return json.dumps(content)
+
+
+@app.get("/api/v1/elo_results")
+def return_results():
+    return generator.return_full_category_table()
