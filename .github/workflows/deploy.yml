@@ -1,0 +1,22 @@
+name: Deploy to Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v0.1.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_SSH_PORT }}
+          script: |
+            docker pull your_dockerhub_username/your_image_name:latest
+            docker stop your_app_container || true
+            docker rm your_app_container || true
+            docker run -d --name your_app_container -p 8000:8000 your_dockerhub_username/your_image_name:latest
