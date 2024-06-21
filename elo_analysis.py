@@ -424,10 +424,13 @@ def report_elo_analysis_results(
 ):
     battles = pd.DataFrame(battles_json)
 
-    tqdm.pandas(desc=f"Processing using {filter_func.__name__}")
-    filtered_indices = battles.progress_apply(filter_func, axis=1)
-    battles = battles[filtered_indices]
+    print(battles)
 
+    filtered_indices = battles.apply(filter_func, axis=1)
+    print(filtered_indices)
+    battles = battles[filtered_indices]
+    print(11111111111111111)
+    print(battles)
     battles = battles.sort_values(ascending=True, by=["tstamp"])
 
     if len(langs) > 0:
@@ -444,7 +447,7 @@ def report_elo_analysis_results(
     ]
 
     # Only use anonymous votes
-    battles = battles[battles["anony"]].reset_index(drop=True)
+
     battles_no_ties = battles[~battles["winner"].str.contains("tie")]
     if exclude_tie:
         battles = battles_no_ties
@@ -455,7 +458,7 @@ def report_elo_analysis_results(
     if run_outlier_detect:
         model_pair_stats = get_model_pair_stats(battles)
         battles = outlier_detect(model_pair_stats, battles)
-
+    print(battles)
     print(f"Number of battles: {len(battles)}")
     # Online update
     elo_rating_online = compute_elo(battles)
@@ -552,19 +555,27 @@ def pretty_print_elo_rating(rating):
 
 def return_full_category_table():
     _log_files = get_log_files()
+    np.random.seed(42)
     _battles = clean_battle_data(_log_files, [])
+    for x in _battles:
+        for key in [
+            "conversation_a",
+            "conversation_b",
+            "question_id",
+        ]:
+            del x[key]
+
     _filter_func_map = {
         "full": lambda x: True,
         "long": filter_long_conv,
         "chinese": lambda x: x["language"] == "Chinese",
-        "english": lambda x: x["language"] == "English",
+        "english": lambda x: x['language'] == 'English'
     }
-    assert all(
-        [cat in _filter_func_map for cat in ['english', 'chinese', 'full']]
-    ), f"Invalid category: ['english', 'chinese', 'full']"
+
     results = {}
-    for cat in ['english', 'chinese', 'full']:
-        filter_func = _filter_func_map[cat]
+    for cat in [ 'full']:
+        _filter_func = _filter_func_map[cat]
+
         results[cat] = report_elo_analysis_results(
             _battles,
             rating_system="bt",
@@ -576,10 +587,10 @@ def return_full_category_table():
             daily_vote_per_user=None,
             run_outlier_detect=False,
             scale=1,
-            filter_func=filter_func,
+            filter_func=_filter_func
         )
 
-    for cat in ['english', 'chinese', 'full']:
+    for cat in [ 'full']:
 
         pretty_print_elo_rating(results[cat]["elo_rating_online"])
 

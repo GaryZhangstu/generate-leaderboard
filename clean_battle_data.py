@@ -371,6 +371,7 @@ def clean_battle_data(
                 del all_ips[ban_ip]
     print("Top 30 IPs:")
     print(sorted(all_ips.values(), key=lambda x: x["count"], reverse=True)[:30])
+
     return battles
 
 

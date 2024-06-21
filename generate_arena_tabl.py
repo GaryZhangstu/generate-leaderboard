@@ -76,11 +76,11 @@ def get_arena_table(arena_df, arena_subset_df=None):
 
             # license
 
-
             values.append(row)
         except Exception as e:
             print(f"{model_key} - {e}")
     return values
+
 
 def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_file=None, ):
     if elo_results_file:
@@ -90,20 +90,19 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
 
         elo_results = return_full_category_table()
 
-
     all_data = []
 
-    for i in ["full", "chinese", "english"]:
+    for i in ["full"]:
         if elo_results[i]:
             arena_df = elo_results[i]["leaderboard_table_df"]
 
             arena_values = get_arena_table(arena_df)
 
             column_names = [
-                "Rank* (UB)",
+                "Rank",
                 "Model",
                 "Elo",
-                "95% CI",
+                "CI",
                 "Votes"
             ]
             arena_table = pd.DataFrame(arena_values, columns=column_names)
@@ -127,3 +126,7 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
         json.dump(all_data, fout)
 
     print(f"Arena leaderboard JSON saved to {output_file}")
+
+
+if __name__ == "__main__":
+    generate_arena_leaderboard_json()
