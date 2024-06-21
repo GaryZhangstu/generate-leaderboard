@@ -1,79 +1,72 @@
 import json
 import random
-import time
+import shortuuid
+from datetime import datetime, timedelta
 from faker import Faker
 
-# 初始化Faker库
 fake = Faker()
 
-# 定义一些常量
-VOTE_TYPES = ["leftvote", "rightvote", "tievote", "bothbad_vote"]
-MODEL_NAMES = ["model_a", "model_b", "model_c", "model_d"]
+# List of possible models
+models_list = ["model_a", "model_b", "model_c", "model_d", "model_e", "model_f"]
 
-# 定义一个生成随机消息对话的函数
-def generate_messages():
-    user_messages = [
-        "What is the capital of France?",
-        "Tell me a joke.",
-        "How do I make a cup of tea?",
-        "What's the weather like today?"
-    ]
-    assistant_responses = [
-        "The capital of France is Paris.",
-        "Why did the scarecrow win an award? Because he was outstanding in his field!",
-        "To make a cup of tea, boil water, pour it over a tea bag, and let it steep for a few minutes.",
-        "Today's weather is sunny with a high of 25 degrees Celsius."
-    ]
-    
-    user_msg = random.choice(user_messages)
-    assistant_msg = random.choice(assistant_responses)
-    
-    return [["user", user_msg], ["assistant", assistant_msg]]
+def generate_valid_data_entry():
+    # Generate a random timestamp within the past year
+    tstamp = int((datetime.now() - timedelta(days=random.randint(0, 365))).timestamp())
 
-# 定义一个生成随机投票数据的函数
-def generate_vote_data():
-    vote_data = {
-        "type": random.choice(VOTE_TYPES),
-        "models": random.sample(MODEL_NAMES, 2),
-        "states": [
-            {
-                "conv_id": fake.uuid4(),
-                "model_name": random.choice(MODEL_NAMES),
-                "messages": generate_messages(),
-                "offset": 0
-            },
-            {
-                "conv_id": fake.uuid4(),
-                "model_name": random.choice(MODEL_NAMES),
-                "messages": generate_messages(),
-                "offset": 0
-            }
-        ],
-        "ip": fake.ipv4(),
-        "tstamp": int(time.time())
+    # Generate random IP address
+    ip = fake.ipv4()
+
+    # Generate conversation data
+    user_question = "What is the capital of France?"
+    assistant_answer = "The capital of France is Paris."
+
+    states = [
+        {
+            "conv_id": shortuuid.uuid(),
+            "model_name": random.choice(models_list),
+            "messages": [
+                ["user", user_question],
+                ["assistant", assistant_answer]
+            ],
+            "offset": 0
+        },
+        {
+            "conv_id": shortuuid.uuid(),
+            "model_name": random.choice(models_list),
+            "messages": [
+                ["user", user_question],
+                ["assistant", assistant_answer]
+            ],
+            "offset": 0
+        }
+    ]
+    anony = random.choice([True, False])
+    entry = {
+        "type": random.choice(["leftvote", "rightvote", "tievote", "bothbad_vote"]),
+        "models": [states[0]["model_name"], states[1]["model_name"]],
+        "states": states,
+        "ip": ip,
+        "anony": anony,
+        "tstamp": tstamp
     }
-    return vote_data
 
-# 生成指定数量的投票数据并存储在列表中
-def generate_votes(num_votes):
-    votes = []
-    for _ in range(num_votes):
-        votes.append(generate_vote_data())
-    return votes
+    return entry
 
-# 将列表写入文件
-def write_votes_to_file(file_path, votes):
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(votes, f, indent=4)
+def generate_data(num_entries):
+    data = []
+    for _ in range(num_entries):
+        data.append(generate_valid_data_entry())
+    return data
 
-# 主函数
+def save_to_json(data, filename):
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
 if __name__ == "__main__":
-    file_path = "Logs/server0/server_log_20230402-1530-conv.json"  # 指定输出文件路径
-    num_votes = 1000  # 指定要生成的投票数据数量
+    num_entries = 1000  # Number of entries to generate
+    filename = "Logs/server0/20230402-1531-conv.json"
 
-    # 生成投票数据
-    votes = generate_votes(num_votes)
-    
-    # 将投票数据写入文件
-    write_votes_to_file(file_path, votes)
-    print(f"Generated {num_votes} vote data entries and wrote to {file_path}")
+    data = generate_data(num_entries)
+    save_to_json(data, filename)
+
+    print(f"Generated {num_entries} valid data entries and saved to {filename}")

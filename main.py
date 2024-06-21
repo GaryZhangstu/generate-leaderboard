@@ -13,7 +13,7 @@ import utils
 
 app = FastAPI()
 
-leaderboard_file = 'example.csv'
+
 
 
 @app.get("/")
