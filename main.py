@@ -38,11 +38,10 @@ def leaderboard():
     else:
         return
     content = utils.read_json_file(full_path)
-    with open('1.txt', 'w') as f:
-        f.write(content)
+
     print(f"Content of the latest file ({max_date_file}):")
     print(json.dumps(content, indent=4, ensure_ascii=False))
-    return {"ok"}
+    return content
 
 
 @app.get("/api/v1/elo_results")
