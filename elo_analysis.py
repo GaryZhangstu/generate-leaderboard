@@ -13,7 +13,6 @@ import pandas as pd
 import plotly.express as px
 from tqdm import tqdm
 
-
 from model_registry import get_model_info
 from basic_stats import get_log_files
 from clean_battle_data import clean_battle_data
@@ -427,10 +426,9 @@ def report_elo_analysis_results(
     print(battles)
 
     filtered_indices = battles.apply(filter_func, axis=1)
-    print(filtered_indices)
+
     battles = battles[filtered_indices]
-    print(11111111111111111)
-    print(battles)
+
     battles = battles.sort_values(ascending=True, by=["tstamp"])
 
     if len(langs) > 0:
@@ -564,7 +562,7 @@ def return_full_category_table():
             "question_id",
         ]:
             del x[key]
-
+    print(_battles)
     _filter_func_map = {
         "full": lambda x: True,
         "long": filter_long_conv,
@@ -573,8 +571,25 @@ def return_full_category_table():
     }
 
     results = {}
-    for cat in [ 'full']:
+    original_battles = _battles.copy()
+    for cat in ['full', "chinese", "english"]:
+
         _filter_func = _filter_func_map[cat]
+        if cat == 'english':
+
+            _battles = [item for item in original_battles if item['language'] == 'English']
+            print(2222222222222222)
+            print(_battles)
+            print(2222222222222222)
+            if len(_battles) < 1000:
+                print("english")
+                continue
+
+        elif cat == 'chinese':
+            _battles = [item for item in original_battles if item['language'] == 'Chinese']
+            if len(_battles) < 1000:
+                print("chinese")
+                continue
 
         results[cat] = report_elo_analysis_results(
             _battles,
@@ -587,10 +602,12 @@ def return_full_category_table():
             daily_vote_per_user=None,
             run_outlier_detect=False,
             scale=1,
-            filter_func=_filter_func
+
         )
 
-    for cat in [ 'full']:
+    for cat in ['full', "chinese", "english"]:
+        if results.get(cat) is None:
+            continue
 
         pretty_print_elo_rating(results[cat]["elo_rating_online"])
 
@@ -602,7 +619,6 @@ def return_full_category_table():
         _cutoff_date = datetime.datetime.fromtimestamp(
             _last_updated_tstamp, tz=timezone("US/Pacific")
         ).strftime("%Y%m%d")
-
 
     return results
 

@@ -93,9 +93,13 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
 
     all_data = []
 
-    for i in ["full"]:
+    for i in ["full","english",'chinese']:
+        if elo_results.get(i) is None:
+            continue
         if elo_results[i]:
             arena_df = elo_results[i]["leaderboard_table_df"]
+
+            print(arena_df)
 
             arena_values = get_arena_table(arena_df)
 
@@ -108,11 +112,14 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
             ]
             arena_table = pd.DataFrame(arena_values, columns=column_names)
             result_dict = arena_table.to_dict(orient='records')
+            sorted_data = sorted(result_dict, key=lambda x: x["elo"], reverse=True)
+            for x, item in enumerate(sorted_data, start=1):
+                item["rank"] = x
             return_data = {
                 "dataSource": elo_results[i]["rating_system"],
                 "category": i,
                 "lastUpdated": elo_results[i]['last_updated_datetime'],
-                "arena_table": result_dict,
+                "arena_table": sorted_data,
 
             }
             all_data.append(return_data)

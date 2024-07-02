@@ -14,8 +14,6 @@ import utils
 app = FastAPI()
 
 
-
-
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
@@ -23,7 +21,7 @@ def read_root():
 
 @app.post("/api/v1/compute_elo")
 def compute_elo(background_tasks: BackgroundTasks):
-    utils.download_new_file()
+    #utils.download_new_file()
     background_tasks.add_task(generate_arena_tabl.generate_arena_leaderboard_json)
     return {"ok"}
 
