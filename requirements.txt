@@ -10,3 +10,4 @@ shortuuid~=1.0.13
 tiktoken~=0.7.0
 langdetect~=1.0.9
 Faker~=25.3.0
+scikit-learn
