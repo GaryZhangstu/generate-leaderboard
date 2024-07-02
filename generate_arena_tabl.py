@@ -3,6 +3,7 @@ import os
 import pickle
 from datetime import datetime
 import config.oss_config as oss
+import requests
 
 import pandas as pd
 
@@ -99,11 +100,11 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
             arena_values = get_arena_table(arena_df)
 
             column_names = [
-                "Rank",
-                "Model",
-                "Elo",
-                "CI",
-                "Votes"
+                "rank",
+                "model",
+                "elo",
+                "ci",
+                "votes"
             ]
             arena_table = pd.DataFrame(arena_values, columns=column_names)
             result_dict = arena_table.to_dict(orient='records')
@@ -125,7 +126,22 @@ def generate_arena_leaderboard_json(leaderboard_table_file=None, elo_results_fil
     with open(output_file, "w") as fout:
         json.dump(all_data, fout)
 
-    print(f"Arena leaderboard JSON saved to {output_file}")
+
+def generate_arena_leaderboard_json_with_retry():
+
+    url = "http://120.0.0.1:8085/is_success/"
+    compute_state = "true"
+    try:
+        generate_arena_leaderboard_json()
+    except:
+        compute_state = "false"
+    headers = {'Content-Type': 'application/json'}
+
+    response = requests.post(
+        url+compute_state,
+        headers=headers,
+    )
+
 
 
 if __name__ == "__main__":
