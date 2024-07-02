@@ -265,8 +265,8 @@ def is_sentence_complete(output: str):
 
 
 # Models don't use the same configuration key for determining the maximum
-# sequence length.  Store them here so we can sanely check them.
-# NOTE: The ordering here is important.  Some models have two of these and we
+# sequence lengttore them here so we can sanely check them.
+# NOTE: The ordering here is importanome models have two of these and we
 # have a preference for which value gets used.
 SEQUENCE_LENGTH_KEYS = [
     "max_position_embeddings",
@@ -411,18 +411,21 @@ def read_json_file(file_path: str):
 
 
 def download_new_file():
-    local_folder = './Logs/server0/'
-    oss_folder = 'Logs/'
-    for obj in bucket.list_objects_v2(prefix=oss_folder, delimiter='/'):
-        if obj.is_prefix():
-            continue  # 跳过目录
-        oss_file_key = obj.key
-        local_file_path = os.path.join(local_folder, os.path.basename(oss_file_key))
+    try:
+        local_folder = './Logs/server0/'
+        oss_folder = 'Logs/'
+        for obj in bucket.list_objects_v2(prefix=oss_folder, delimiter='/'):
+            if obj.is_prefix():
+                continue  # 跳过目录
+            oss_file_key = obj.key
+            local_file_path = os.path.join(local_folder, os.path.basename(oss_file_key))
 
-    # 检查本地文件是否存在
-        if not os.path.exists(local_file_path):
-            print(f"本地缺少文件 {local_file_path}，开始下载...")
-            bucket.get_object_to_file(oss_file_key, local_file_path)
-            print(f"文件 {local_file_path} 下载完成。")
-        else:
-            print(f"文件 {local_file_path} 已存在，跳过下载。")
+        # 检查本地文件是否存在
+            if not os.path.exists(local_file_path):
+                print(f"本地缺少文件 {local_file_path}，开始下载...")
+                bucket.get_object_to_file(oss_file_key, local_file_path)
+                print(f"文件 {local_file_path} 下载完成。")
+            else:
+                print(f"文件 {local_file_path} 已存在，跳过下载。")
+    except Exception as e:
+        print(f"下载文件时发生错误: {e}")
