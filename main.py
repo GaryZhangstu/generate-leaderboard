@@ -26,6 +26,12 @@ def compute_elo(background_tasks: BackgroundTasks):
     return {"ok"}
 
 
+@app.post("/api/v1/run_script")
+def run_script():
+    utils.download_new_file()
+    return {"ok"}
+
+
 @app.get("/api/v1/leaderboard")
 def leaderboard():
     folder_path = "./tables/arena_table"

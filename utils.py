@@ -5,6 +5,9 @@ from asyncio import AbstractEventLoop
 from io import BytesIO
 import base64
 import json
+
+import oss2
+
 import logging
 import logging.handlers
 import os
@@ -414,9 +417,8 @@ def download_new_file():
     try:
         local_folder = './Logs/server0/'
         oss_folder = 'Logs/'
-        for obj in bucket.list_objects_v2(prefix=oss_folder, delimiter='/'):
-            if obj.is_prefix():
-                continue  # 跳过目录
+
+        for obj in oss2.ObjectIteratorV2(bucket=bucket,prefix=oss_folder):
             oss_file_key = obj.key
             local_file_path = os.path.join(local_folder, os.path.basename(oss_file_key))
 
