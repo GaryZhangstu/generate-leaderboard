@@ -1,7 +1,0 @@
-{
-    "english": {
-        "rating_system": "elo",
-        "elo_rating_online": {},
-        "elo_rating_final": {},
-        "leaderboard_table": "| Rank | Model | Elo Rating | Description |\n| --- | --- | --- | --- |\n",
-        "win_fraction_heatmap": 

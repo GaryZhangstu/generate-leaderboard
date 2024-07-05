@@ -7,7 +7,7 @@ from faker import Faker
 fake = Faker()
 
 # List of possible models
-models_list = ["model_a", "model_b", "model_c", "model_d", "model_e", "model_f"]
+models_list = ["gpt4o", "gpt4", "gemini1.5 flash", "Gemini 1.5 pro"]
 
 def generate_valid_data_entry():
     # Generate a random timestamp within the past year
@@ -17,8 +17,8 @@ def generate_valid_data_entry():
     ip = fake.ipv4()
 
     # Generate conversation data
-    user_question = "What is the capital of France?"
-    assistant_answer = "The capital of France is Paris."
+    user_question = "你好"
+    assistant_answer = "你好呀"
 
     states = [
         {
@@ -64,7 +64,7 @@ def save_to_json(data, filename):
 
 if __name__ == "__main__":
     num_entries = 1000  # Number of entries to generate
-    filename = "Logs/server0/20230402-1531-conv.json"
+    filename = "Logs/server0/20230402-1533-conv.json"
 
     data = generate_data(num_entries)
     save_to_json(data, filename)

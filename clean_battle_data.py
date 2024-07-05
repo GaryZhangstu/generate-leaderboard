@@ -116,7 +116,7 @@ def read_file(filename):
     data = []
     for retry in range(5):
         try:
-            with open(filename, 'r') as file:
+            with open(filename, 'r',encoding='utf-8') as file:
                 content = file.read()
                 json_array = json.loads(content)
 

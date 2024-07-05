@@ -4,7 +4,7 @@ from fastapi import FastAPI, BackgroundTasks
 
 import elo_analysis
 import generate_arena_tabl
-import run_script
+
 import generator
 import utils
 import os
